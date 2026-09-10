@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software or the accompanying numerical results, please cite the repository and the associated manuscript."
+title: "Quantum-Geometric Metric Uncertainty: Reproducibility Materials"
+type: software
+authors:
+  - family-names: Addo
+    given-names: Dorcas Attuabea
+repository-code: "https://github.com/divinelybless/quantum-geometric-metric-uncertainty"
+url: "https://github.com/divinelybless/quantum-geometric-metric-uncertainty"
+version: 0.1.0
+date-released: 2026-09-10
+keywords:
+  - quantum natural gradient
+  - Fubini-Study metric
+  - variational quantum eigensolver
+  - quantum geometry
+  - metric uncertainty
+  - preconditioning
+  - finite-shot estimation
