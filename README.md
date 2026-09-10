@@ -24,6 +24,7 @@ For the fully centered finite-shot metric estimator, the repository also documen
 - `REPRODUCIBILITY.md` — instructions for reproducing the numerical results.
 - `requirements.txt` and `environment.yml` — Python environment information.
 - `CITATION.cff` — repository citation metadata.
+- `LICENSE` — MIT License.
 
 The full journal manuscript and complete submission bibliography will be added once the scientific version is frozen for public release.
 
@@ -61,7 +62,7 @@ If you use this repository, please cite the accompanying manuscript and this sof
 
 ## License
 
-A software/data license has not yet been selected. Until a license is added, standard copyright restrictions apply.
+This repository is released under the **MIT License**. See `LICENSE` for the full terms.
 
 ## Author
 
