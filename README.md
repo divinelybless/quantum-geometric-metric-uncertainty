@@ -36,6 +36,10 @@ The numerical evidence is intentionally structured around complementary tests:
 3. **Transverse-longitudinal Ising dimer:** demonstrates evaluation of the certificate on a recognizable interacting VQE Hamiltonian.
 4. **Finite-shot Monte Carlo:** tests the derived high-probability metric-error radius under the specified centered fidelity estimator.
 
+## Reproduction status
+
+All four notebook code paths were independently re-executed on **10 September 2026** from fresh Python processes in an isolated working directory. All completed without runtime errors and reproduced the manuscript-level certificate values. See `REPRODUCIBILITY.md` for the recorded values and scope of this check.
+
 ## Quick start
 
 ```bash
