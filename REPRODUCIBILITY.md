@@ -13,6 +13,7 @@ Recommended:
 - Python 3.11 or newer
 - NumPy
 - SciPy
+- Pandas
 - Matplotlib
 - JupyterLab / Jupyter Notebook
 - nbformat
@@ -29,6 +30,19 @@ or create the Conda environment with:
 conda env create -f environment.yml
 conda activate qgp-metric-uncertainty
 ```
+
+## Independent execution check
+
+On 10 September 2026, the four repository notebooks were re-executed sequentially from fresh Python processes in an isolated working directory. All four completed without runtime errors. The execution check did not reuse notebook kernel state between notebooks.
+
+Key reproduced values were:
+
+- Exact verification: `kappa(S0) = 4.0`, `K(lambda,eps) = 7.2`, `epsilon_crit = 1.875`.
+- Finite-shot validation: `epsilon_N = 0.7449667286`, empirical violation rate `0.0`, `K = 27.8389353155 < kappa_H = 64`.
+- Noncommuting entangled test: `||[G,Hess]||_2 = 1.1384199577`, `kappa(S_lambda) = 4.1123004994`, `K = 8.8973665961`, certificate `True`.
+- Ising dimer: active rank `3`, `kappa(S0) = 2.9964256623`, `epsilon_crit = 0.0168084698`, `kappa(S_lambda) = 2.7709346418`, `K = 3.4134587353`, certificate `True`.
+
+A completely new dependency installation was not performed in that check because package installation was not available in the isolated runtime; dependency declarations in `requirements.txt` and `environment.yml` remain the portable setup route for external users.
 
 ## Notebook order
 
@@ -60,16 +74,12 @@ Reproduces the transverse-longitudinal Ising dimer with `J = 1`, `h_x = 0.8`, an
 
 ## Figures
 
-The `figures/` directory contains manuscript figures generated from these notebooks. Their source calculations should be regarded as authoritative rather than the rendered PNG files themselves.
+The `figures/` directory contains manuscript figures generated from these notebooks. Their source calculations should be regarded as authoritative rather than any rendered image file alone.
 
 ## Numerical precision
 
 Small differences in the last printed digits may occur across BLAS/LAPACK implementations and SciPy versions. The theorem checks are based on inequalities with numerical tolerances, not exact string matching of floating-point output.
 
-## Manuscript source
+## Public-release status
 
-`paper/main.tex` is the polished scientific source used when this repository was prepared. `paper/references.bib` is the associated working bibliography. Journal-specific formatting may differ from this repository version.
-
-## Archival release
-
-Before final journal submission, the repository should be archived to a DOI-granting service such as Zenodo. The resulting persistent identifier can then replace the provisional repository citation in the manuscript and `CITATION.cff`.
+The repository is now suitable as a reproducibility release candidate. Before creating the archival DOI release, the remaining tasks are to choose a software/data license, create a GitHub release/tag (suggested `v0.1.0`), connect the repository to Zenodo, and insert the resulting DOI into `CITATION.cff` and the manuscript.
