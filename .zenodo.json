@@ -1,0 +1,28 @@
+{
+  "title": "Quantum-Geometric Metric Uncertainty: Reproducibility Materials",
+  "description": "Code, numerical experiments, figures, and reproducibility materials supporting the manuscript Metric Uncertainty and Local Linearized Convergence Certificates in Quantum-Geometric Variational Optimization.",
+  "creators": [
+    {
+      "name": "Addo, Dorcas Attuabea"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "quantum natural gradient",
+    "Fubini-Study metric",
+    "variational quantum eigensolver",
+    "quantum geometry",
+    "metric uncertainty",
+    "preconditioning",
+    "finite-shot estimation"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/divinelybless/quantum-geometric-metric-uncertainty",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ],
+  "upload_type": "software",
+  "access_right": "open"
+}
