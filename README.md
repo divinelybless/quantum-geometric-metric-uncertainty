@@ -14,15 +14,18 @@ For the fully centered finite-shot metric estimator, the repository also documen
 
 ## Repository structure
 
-- `paper/` — current polished manuscript source and working bibliography.
 - `notebooks/01_exact_verification.ipynb` — exact geometry, active-space, perturbation, conditioning and regularization checks.
 - `notebooks/02_finite_shot_verification.ipynb` — finite-shot fidelity estimator and Monte Carlo validation.
 - `notebooks/03_cross_model_validation.ipynb` — noncommuting entangled synthetic stress test.
 - `notebooks/04_ising_dimer_benchmark.ipynb` — transverse-longitudinal Ising-dimer benchmark and uncertainty-threshold sweep.
-- `figures/` — figures reproduced from the documented notebooks.
+- `figures/ising_preconditioned_spectrum.svg` — preconditioned-curvature spectrum for the Ising benchmark.
+- `figures/ising_uncertainty_threshold.svg` — theorem-bound/threshold visualization for the Ising benchmark.
+- `references/core_references.bib` — core verified references supporting the reproducibility package.
 - `REPRODUCIBILITY.md` — instructions for reproducing the numerical results.
 - `requirements.txt` and `environment.yml` — Python environment information.
 - `CITATION.cff` — repository citation metadata.
+
+The full journal manuscript and complete submission bibliography will be added once the scientific version is frozen for public release.
 
 ## Validation hierarchy
 
